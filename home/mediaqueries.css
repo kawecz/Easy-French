@@ -1,0 +1,93 @@
+@media (max-width:1085px) {
+    
+    .line {
+      flex-wrap: wrap;
+     
+    }
+
+}
+
+@media (max-width:895px) {
+    
+    .box p {
+        font-size: 11pt;
+    }
+    .hr {
+        width: 550px;
+    }
+    .middle-line {
+        max-width: 550px;
+    }
+
+}
+
+@media (max-width:750px) {
+    .burger {
+        display: block;
+        z-index: 1;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #084259;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3em;
+        clip-path: circle(100px at -90% -15%);
+        pointer-events: none;
+    }
+
+    .nav.is-active .nav-list {
+        clip-path: circle(1500px at 90% 15%);
+        pointer-events: all;
+        font-size: 17pt;
+        
+    }
+    .nav.is-active .nav-list li:hover {
+        transform: scale(1.1);
+    }
+
+    .nav.is-active .burger {
+       
+        border-top: transparent;
+        transition: ease-in-out 1s;
+        top: 39px;
+        right: 87px; 
+    }
+
+    .nav.is-active .burger::before {
+        transform: rotate(-135deg);
+        transition: ease-in-out 0.5s;
+    }
+    .nav.is-active .burger::after {
+        transform: rotate(135deg);
+        top: -8px;
+        transition: ease-in-out 0.5s;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: end;
+    }
+    .hosts {
+        margin-top: 2em;
+    }
+}
+
+@media (max-width:650px) {
+    .middle-line {
+        max-width: 420px;
+    }
+    .episode-videos iframe {
+        width: 350px;
+    }
+
+    .hr {
+        width: 350px;
+    }
+}

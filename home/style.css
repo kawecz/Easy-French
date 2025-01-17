@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.7s;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --color1:#084259;
+    --color2:#46858C;
+    --color3:#92A69A;
+    --color4:#8C2E2E;
+}
+
+header {
+    background: var(--color2);
+    width: 100vw;
+    position: fixed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-right: 1.4em;
+
+}
+
+.burger {
+    border: none;
+    background: none;
+    border-top: 2px solid white;
+    cursor: pointer;
+    display: none;
+}
+.burger::before,.burger::after  {
+    content: "";
+    display: block;
+    margin-top: 0.3em;
+    background: #fff;
+    width: 30px;
+    height: 2px;
+    position: relative;
+}
+
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 1em;
+    
+}
+.nav-list li a {
+    color: #fff;
+    cursor: pointer;
+}
+
+.easy-french-icon {
+    padding: 0.5em;
+}
+.easy-french-icon:hover {
+    opacity: 0.7;
+}
+
+.easy-french-icon img {
+    width: 50px;
+    border-radius: 1em;
+   border: 2px solid white;
+   box-shadow: 10px 10px 15px #062b3a69 ;
+}
+
+.nav-list li:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.main-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 500px;
+    background-image: url(../assets/imgs/main_image.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 3em;
+}
+
+.main-image h1 {
+    font-size: 40pt;
+    color: #fff;
+    font-family: "Bodoni Moda", serif;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+    padding: 1em;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7em;
+    background: var(--color3);
+    padding: 0.7em;
+    border-radius: 2em;
+    cursor: pointer;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+.box:hover {
+   background: var(--color1);
+   transform: scale(1.2);
+}
+
+.box img {
+    width: 15px;
+}
+
+.about {
+    display: flex;
+    padding: 3em;
+    max-width: 950px;
+    text-align: justify;
+    text-indent: 2em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+}
+
+.about h2 {
+    margin-bottom: 1em;
+}
+
+.hosts {
+    margin-left: 2.6em;
+}
+
+#hosts {
+    display: flex;
+    text-align: center;
+    font-weight: 600;
+   
+}
+#hosts img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.hosts-pic img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+.hr {
+    width: 850px;
+    margin: auto;
+    opacity: 0.2;
+}
+
+.middle-line {
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+    margin: 5em auto 2em;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.middle-line h1 {
+   margin-bottom: 1.7em;
+}
+
+.middle-line h1 img {
+    width: 20px;
+}
+.middle-line p {
+   padding: 0.7em;
+   font-weight: 510;
+}
+.episodes-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.episode-videos {
+    padding: 1.5em;
+}
+
+footer {
+    background: var(--color4);
+    color: #fff;
+    padding: 2em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    font-size: 10pt;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    font-weight: 600;
+}
+
+footer p {
+    opacity: 0.7;
+}
